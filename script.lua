@@ -37,7 +37,7 @@ local function consume(filename)
 
 	file = assert(io.open(filename, "w"))
 	file:write(body)
-  file:close()
+	file:close()
 
 	local out = toml.parse(meta)
 	return out
@@ -99,7 +99,7 @@ local function post(template, meta, buildfile)
 
 	local out = assert(io.open(("posts/%s.html"):format(meta.slug), "w"))
 	out:write(content)
-  out:close()
+	out:close()
 end
 
 local function index(template, data)
@@ -108,7 +108,7 @@ local function index(template, data)
 	for _, meta in pairs(data) do
 		local temp = assert(io.open("temp.txt", "w"))
 		temp:write(rowMacro(meta))
-    temp:close()
+		temp:close()
 		os.execute("m4 post.m4 temp.txt >> rows.txt")
 	end
 	os.remove("temp.txt")
@@ -122,7 +122,7 @@ local function index(template, data)
 
 	local out = assert(io.open("index.html", "w"))
 	out:write(content)
-  out:close()
+	out:close()
 end
 
 local function pprint(tbl, indent, seen)
