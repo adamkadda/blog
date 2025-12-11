@@ -1,4 +1,4 @@
-local start = os.clock()
+local start_time = os.clock()
 
 local lfs = require("lfs") -- https://github.com/lunarmodules/luafilesystem
 local toml = require("toml") -- https://github.com/nexo-tech/toml2lua
@@ -36,7 +36,8 @@ local function consume(filename)
 	end
 
 	file = assert(io.open(filename, "w"))
-	file:write(body):close()
+	file:write(body)
+  file:close()
 
 	local out = toml.parse(meta)
 	return out
@@ -89,7 +90,7 @@ local function post(template, meta, buildfile)
 	os.execute(pandoc)
 	os.remove("temp.txt")
 
-	file = assert(io.open(buildfile))
+	local file = assert(io.open(buildfile))
 	local body = file:read("*a")
 	file:close()
 
@@ -97,7 +98,8 @@ local function post(template, meta, buildfile)
 	content = content:gsub("{{%s*BODY%s*}}", body)
 
 	local out = assert(io.open(("posts/%s.html"):format(meta.slug), "w"))
-	out:write(content):close()
+	out:write(content)
+  out:close()
 end
 
 local function index(template, data)
@@ -105,7 +107,8 @@ local function index(template, data)
 
 	for _, meta in pairs(data) do
 		local temp = assert(io.open("temp.txt", "w"))
-		temp:write(rowMacro(meta)):close()
+		temp:write(rowMacro(meta))
+    temp:close()
 		os.execute("m4 post.m4 temp.txt >> rows.txt")
 	end
 	os.remove("temp.txt")
@@ -118,7 +121,8 @@ local function index(template, data)
 	local content = template:gsub("{{%s*ROWS%s*}}", rows)
 
 	local out = assert(io.open("index.html", "w"))
-	out:write(content):close()
+	out:write(content)
+  out:close()
 end
 
 local function pprint(tbl, indent, seen)
@@ -180,5 +184,5 @@ end
 table.sort(data, recency)
 index(indexTemplate, data)
 
-local elapsed = os.clock() - start
-print(string.format("script.lua runtime: %ss", elapsed))
+local time_elapsed = os.clock() - start_time
+print(string.format("script.lua runtime: %ss", time_elapsed))
