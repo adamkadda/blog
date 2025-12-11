@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adam Kadda · Blog</title>
+    <meta name="author" content="Adam Kadda" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="icon" href="/static/img/favicon.ico" />
+    <link rel="stylesheet" href="/static/css/clean.css" />
+    <!-- script -->
+    <script src="/static/js/filter.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="/" rel="home">blog.adamkadda.com</a>
+        <a href="adamkadda.com">about me</a>
+      </header>
+      <h1>I hope you like reading</h1>
+      <table id="index">
+        <colgroup>
+          <col span="1" class="date" />
+          <col span="1" class="title" />
+          <col span="1" class="tags" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="date">date</th>
+            <th class="title">title</th>
+            <th class="tags">tags</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ ROWS }}
+        </tbody>
+      </table>
+      <footer>
+        <div class="buddies">
+          <figure class="frog sprite">
+            <img src="/static/img/frog-wave.svg" alt="frog waving amicably" />
+          </figure>
+          <figure class="penguin sprite">
+            <img
+              src="/static/img/penguin-wave.svg"
+              alt="penguin waving cutely"
+            />
+          </figure>
+        </div>
+        <p>Hello! We (frog, penguin, and I) hope you enjoyed your time here.</p>
+        <p>
+          Hearing that someone enjoyed my work makes me happy. If you have
+          something (hopefully nice) to say, you can email me at
+          <code>hello@adamkadda.com</code>
+        </p>
+        <p></p>
+        <p>
+          This blog was built with my own static site generator, it's a work in
+          progress though. If that interests you, do have a look
+          <a href="/https://github.com/adamkadda/blog">here</a>.
+        </p>
+        <p>© Adam Kadda</p>
+      </footer>
+    </main>
+  </body>
+</html>
