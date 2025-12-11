@@ -1,0 +1,7 @@
+# build
+index.html
+posts/
+build
+
+# macOS
+.DS_Store

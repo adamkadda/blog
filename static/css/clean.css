@@ -1,0 +1,390 @@
+/* =================================
+           Initial Styles
+================================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #161821;
+  --color-fg: #c6c8d1;
+  --color-gutter-bg: #1e2132;
+  --color-gutter-fg: #444b71;
+
+  --color-red: #e27878;
+  --color-orange: #e2a478;
+  --color-green: #b4be82;
+  --color-mint: #89b8c2;
+  --color-blue: #84a0c6;
+  --color-purple: #a093c7;
+  --color-grey: #6b7089;
+}
+
+body {
+  font-family:
+    Helvetica Neue,
+    Arial,
+    sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+main {
+  max-width: 800px;
+  min-height: 100dvh;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--color-mint);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+
+/* =================================
+               Header 
+================================= */
+
+header {
+  display: flex;
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+  background-color: var(--color-gutter-bg);
+  justify-content: space-between;
+  margin: 0 -15px;
+  padding: 30px 15px 9px 15px;
+}
+
+/* =================================
+                h1 
+================================= */
+
+h1 {
+  height: 180px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* =================================
+              Table 
+================================= */
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  line-height: 30px;
+}
+
+thead th {
+  color: var(--color-grey);
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+  font-weight: normal;
+  text-align: left;
+}
+
+thead::after {
+  content: "";
+  display: table-row;
+  height: 9px;
+}
+
+tr {
+  border-bottom: solid 1px var(--color-grey);
+}
+
+.date {
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+  color: var(--color-grey);
+  width: 130px;
+}
+
+td.date {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+
+td.title a {
+  color: var(--color-fg);
+  font-size: 16px;
+}
+
+td.title a:hover {
+  color: var(--color-purple);
+}
+
+@media (max-width: 649px) {
+  .tags {
+    display: none;
+  }
+}
+
+.tags {
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+  color: var(--color-grey);
+  width: 270px;
+}
+
+button.tag {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+}
+
+button.tag:hover {
+  color: var(--color-purple);
+  text-decoration: underline;
+}
+
+/* =================================
+               Filter 
+================================= */
+
+.hidden {
+  display: none;
+}
+
+button.tag.active {
+  color: var(--color-purple);
+}
+
+button.tag.active:hover {
+  color: var(--color-fg);
+}
+
+/* =================================
+                Nav 
+================================= */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-grey);
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+  font-weight: normal;
+  border-bottom: solid 1px var(--color-grey);
+  height: 30.5px;
+  margin-bottom: 30px;
+}
+
+article nav p {
+  margin: 0;
+}
+
+nav .date {
+  width: auto;
+}
+
+nav .tags {
+  display: flex;
+  width: auto;
+  gap: 12px;
+}
+
+nav .tags a {
+  color: var(--color-grey);
+}
+
+nav .tags a:hover {
+  color: var(--color-purple);
+}
+
+/* =================================
+              Article 
+================================= */
+
+h2 {
+  margin: 45px 0 30px 0;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+ol {
+  margin: 30px 0;
+  list-style-position: inside;
+}
+
+li::marker {
+  display: inline-block;
+  color: var(--color-grey);
+}
+
+li {
+  margin: 15px 0;
+}
+
+blockquote {
+  margin: 30px 0;
+  border-left: solid 4px var(--color-grey);
+  padding-left: 15px;
+  color: var(--color-grey);
+}
+
+/* =================================
+              Sprite 
+================================= */
+
+.sprite {
+  user-select: none;
+}
+
+.frog.sprite img {
+  height: 150px;
+}
+
+.penguin.sprite img {
+  height: 120px;
+}
+
+@media (max-width: 749px) {
+  .frog.sprite img {
+    height: 100px;
+  }
+
+  .penguin.sprite img {
+    height: 80px;
+  }
+}
+
+/* =================================
+              Dialogue 
+================================= */
+
+.dialogue {
+  margin: 45px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.message {
+  display: flex;
+}
+
+.message.left {
+  padding-right: 15px;
+}
+
+.message.right {
+  padding-left: 15px;
+  flex-direction: row-reverse;
+}
+
+.character {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.character.left {
+  margin-right: 15px;
+}
+
+.character.right {
+  margin-left: 15px;
+}
+
+.bubble-wrap {
+  position: relative;
+}
+
+.bubble {
+  background-color: var(--color-gutter-bg);
+  position: relative;
+  padding: 12px;
+  border-radius: 18px;
+  max-width: 450px;
+}
+
+.bubble::before,
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+}
+
+.bubble::before {
+  border-color: var(--color-gutter-bg);
+}
+
+.bubble::after {
+  background-color: var(--color-bg);
+  width: 10px;
+}
+
+.bubble.left::before,
+.bubble.left::after {
+  left: -10px;
+  border-bottom-right-radius: 50%;
+}
+
+.bubble.left::before {
+  border-right-style: solid;
+  border-right-width: 20px;
+  border-bottom-left-radius: 50%;
+}
+
+.bubble.right::before,
+.bubble.right::after {
+  right: -10px;
+  border-bottom-left-radius: 50%;
+}
+
+.bubble.right::before {
+  border-left-style: solid;
+  border-left-width: 20px;
+}
+
+.bubble p {
+  margin: 0;
+}
+
+/* =================================
+               Footer 
+================================= */
+
+footer {
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+  background-color: var(--color-gutter-bg);
+  margin: 40px -15px 0 -15px;
+  padding: 30px 15px 6px 15px;
+}
+
+.buddies {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+footer p {
+  margin-bottom: 24px;
+}
+
+footer code {
+  color: var(--color-purple);
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+}
+
+footer p a {
+  text-decoration: underline;
+}

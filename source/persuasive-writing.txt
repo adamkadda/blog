@@ -1,0 +1,89 @@
++++
+title = "Persuasive writing"
+slug = "persuasive-writing"
+tags = [ "personal", "writing" ]
+date = 2025-12-12
++++
+
+# Persuasive writing 
+
+META(2025, 12, 12, [personal, writing])
+
+Back in elementary, I remember churning out hand-written essays every day. Our teacher would give us a prompt, and our task was to write a persuasive essay about it. Whenever I had to write something longer, I've always used this simple two step workflow:
+
+1. Lay out in list form my paper's structure.
+2. Then write the essay, while referring back to my plan.
+
+I did things this way because I found it easier to separate ideation from execution. This might have also worked for me because I tend to lose efficiency (in terms of output speed) when I switch between tasks. Anyways, what I basically did was come up with ideas, arguing with myself until I have a plan. Then, once I've digested that plan, I can steamroll the writing part in one go.
+
+Honestly though, there's a lot of fun in free-form writing. Not having a plan and just letting the words go where they went. Of course I'll rephrase things afterwards, but just jumping into it can be really enjoyable.
+
+## Embarrassment
+
+Somewhere between the fourth or fifth grade, I received an 'A-' on a persuasive essay. At my school, an 'A-' was the third highest grade (before 'A' and 'A+'). Grades meant a lot to me then, and getting an 'A-' meant something went wrong. Not to toot my own horn, but I've had a knack for *argumentative* writing. I didn't have much else I was good at then, so my score really bummed me out. Of course, I enjoyed writing but it was largely because of my grades.
+
+So I went up to my teacher and frantically asked why did I get an 'A-?'. "Because you could have done better" he says. Now with a little more panic and confusion, I asked "What's my paper missing?". He pauses for moment, and says "Try reading Sam's paper". Hurriedly, I walk over to Sam and asked him if I could read his paper. "Sure" he says as he hands it to me.
+
+To begin with, Sam's essay had better hook at the start. I think it was something along the lines of:
+
+> Imagine a place full of technology far more advanced and complex than our world's.
+
+I have to say, I don't think that's *exactly* what Sam wrote, but in my head it was an exciting and intriguing opening that set the stage. It asked you to 'imagine', and it made you- the reader, do the heavy lifting of fleshing out that scene. Sam didn't have to tell you exactly what to imagine, but just enough. The rest of the essay was good, but I think that opening line was pretty great. 
+
+As I kept reading, my feelings contorted between jealousy and confusion, but also admiration. Sam's writing had a flavor I wasn't familiar with, and I was confused why my work didn't have that same magic.
+
+As I thanked Sam and handed back his paper, I felt something stirring inside me. A visceral swirling inside my chest. Twisting, turning, and burning a little. I still can't name that feeling.
+
+DIALOGUE(
+[MESSAGE(frog, neutral, left, normal, [How dramatic.])],
+[MESSAGE(penguin, neutral, right, normal, [I think it's fine...])]
+)
+
+I felt small and embarrassed. Mostly because I was *feeling* embarrassed- it's this weird feedback loop that I've gotten more familiar with now that I'm a little older. It's hard to pinpoint where this recursion started, but I think it's cause I realized I was kind of full of myself. If you can't already tell I was kind of competitive, but trust me that I didn't know that at the time.
+
+The more I thought about how much better Sam's paper was, it really dawned on me that all of us were placed under the same conditions and given the same amount of time, but my paper was just worse. Did I try hard enough? Was I trying my best? Am I upset that my score was lower, or that my paper was worse? I still don't have the answers, but nowadays I can least recognize when I'm treading down a similar train of thought.
+
+Prior to that 'A-', I never thought hard about how to write better. The whole process was almost automatic(?). Another word that comes to mind is 'autopilot'. I felt confident in my writing, probably because I was better than most of my class. I based too much confidence in my scores, and not enough in my actual work. That's a lesson I'm still learning today.
+
+It was the realization that I had been coasting which was so embarrassing. That if I actually cared about the quality of my work, I shouldn't have been content with my grades- because even with an 'A+', I can always do better. And while I wasn't immediately sure that I would do better the next time, cranking out papers and incrementally improving proved to have a compounding impact on my writing.
+
+Looking back, I really appreciate my teacher's words. He was encouraging, and recognized that I might benefit from receiving a lower grade. He was concise and pointed me towards improvement without spoon-feeding it to me. I wish I had more teachers like that, I wish we all had teachers like that.
+
+## Effort and enjoyment
+
+I think it's important to say that I like words. Sentences even. Bad joke, sorry.
+
+What I'm trying to say is, it's a beautiful thing to arrange words in a way so that it is received hopefully in the way you intend. To me at least, it's an art form that dances between an objective and pure creative expression. It's fun. I like it.
+
+Most of my English classes in elementary exercised our reading comprehension and persuasive writing skills. I think those are both very important skills. I don't have much to say about reading comprehension, so we're going to talk about (persuasive) writing. I hope you are fine with that, that's the title of this post after all.
+
+In persuasive writing, your objective is to convince the reader of some idea or perspective. There's many flavors and forms this can take, but they all have the same goal of planting an idea in your head. At school, I was taught that you can appeal through logic, emotion, and credibility. There are other tools, but I'd consider them more as techniques than approaches, tactics not strategies. Of course, as little children we didn't have much credibility so we spent most of our time arguing around facts and feelings.
+
+It's a special thing to write. Your words are frozen in time, free for the reader to read as many (or as few) times as they wish. I think it's romantic. It's a form of art that wants to be understood. I enjoy it, I enjoy polishing my sentences until it sounds like me. Until it is me.
+
+Sometimes of course I prefer a more neutral writing style, nothing too recognizable. It can get boring sometimes, but I feel it's almost necessary when you're info dumping. Think reference documentation. Then again, is reference documentation supposed to be persuasive? Probably not. It's usually terse and heavy. Maybe documentation would benefit from some humor though, just my take.
+
+There are those of us who spend a lot of time polishing our (personal) work till infinity. I do that myself and I think it's understandable. So much time spent building, tweaking, and experimenting, then what gets put out for the world to see (if at all) is a highly concentrated extract of your time and passion. That's your baby.
+
+I brought that up because writing feels similar to me. It's a snapshot of me for everyone to see. It can't hide as much behind complexity or abstractions, so you can see me and my ignorance clear as day. But you can also see me in my choice of words, my thoughts, and what I care about. It's a beautiful thing, but it sure can be scary. I wonder if that goes away.
+
+## Time, toil, and talent
+
+I love the question "what do you want to be when you grow up?".
+
+When you ask someone young enough, their answers are so delightful to hear. During the second grade, I remember my answer to that question was 'geologist'. I think it was because I liked dinosaurs. I probably should have said 'archaeologist' then. But I digress, it's a nice question because children are usually free from burdens of adult life, which lead to positive or touching answers. I know I'm not saying anything new, but it's so nice to hear the 'why' behind their answers as well. Maybe their father is a policeman, or maybe they love the runway, or maybe they just like trains.
+
+Sometimes, not often, I'll ask someone who isn't a child the same question. I'm being humorous, but it's an insightful question. Usually I ask someone I'm at least a little close to, and so they'll entertain my antics. But not everybody has a fun answer to that question. I remember my teachers in second grade answered "anything's fine, all I want is a house and lot". Nothing wrong with that answer, it's just a little sobering to hear as a kid.
+
+DIALOGUE(
+[MESSAGE(penguin, neutral, right, normal, [What do you want to be when you grow up?])],
+[MESSAGE(frog, neutral, left, normal, [Kind.])]
+)
+
+I used to strongly dislike trying my best, out of fear that it wouldn't be enough. Afraid that after trying my hardest and expending my best efforts, I would fail. It was a form of protection, self-preservation perhaps, not a good way of doing so in any case. It just didn't feel safe to risk it, because that's what it was, a risk. I would wager my time, effort and energy to accomplishing something, when I could choose to coast instead.
+
+> Time's ticking and my parents are getting older. My face is slowly wrinkling and my body puts on weight easier. Tell me Gandalf, how do we decide what to do with the time that is given to us?
+
+So many things we could be, but think all the paths we forego by making a choice.
+
+So many things we could be, so find something fun, go at it tooth and nail, and don't let go.

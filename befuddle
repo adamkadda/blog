@@ -1,0 +1,37 @@
+#!/bin/bash
+
+echo -e "focusing...\n"
+build=$(mktemp -d)
+trap 'rm -rf "$build"' EXIT # guaranteed cleanup ^^
+cp source/*.txt "$build/"
+lua script.lua "$build"
+
+ENV="prod"
+
+if [ "$ENV" = "stage" ]; then
+    SUB=staging.blog
+elif [ "$ENV" = "prod" ]; then
+    SUB=blog
+else
+    echo -e "I broke focus!\n"
+    exit 1
+fi
+
+LOCAL=$(pwd)
+REMOTE=/var/www/$SUB.adamkadda.com/html
+
+echo -e "chanting...\n"
+rsync -av --delete \
+    --exclude='.git' \
+    --exclude='.gitignore' \
+    --exclude='README.md' \
+    "$LOCAL/" "$REMOTE/"
+
+echo -e "begging the spirits...\n"
+sudo chown -R www-data:www-data "$REMOTE/"
+
+echo -e "gathering brain fog...\n"
+sudo find "$REMOTE" -type d -exec chmod 755 {} \;
+sudo find "$REMOTE" -type f -exec chmod 644 {} \;
+
+echo -e "befuddle!\n"
