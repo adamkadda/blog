@@ -38,10 +38,13 @@ REMOTE="/var/www/${SUB}.adamkadda.com/html"
 
 printf "chanting...\n"
 rsync -av --delete \
-    --exclude='.git' \
-    --exclude='.gitignore' \
-    --exclude='README.md' \
-    "$LOCAL/" "$REMOTE/"
+    --include='index.html' \
+    --include='posts/' \
+    --include='posts/***' \
+    --include='static/'
+    --include='static/***' \
+    --exclude='*' \
+    "$LOCAL/" "$REMOTE"
 
 printf "begging the spirits...\n"
 sudo chown -R www-data:www-data "$REMOTE/"
