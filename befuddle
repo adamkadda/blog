@@ -1,37 +1,53 @@
 #!/bin/bash
 
-echo -e "focusing...\n"
-build=$(mktemp -d)
-trap 'rm -rf "$build"' EXIT # guaranteed cleanup ^^
-cp source/*.txt "$build/"
-lua script.lua "$build"
+# gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
+# -E : applies ERR traps to functions, substitutions, and subshells
+# -e : exit immediately if anything returns a non-zero status
+# -u : treat unset variables & params errors when performing expansion
+# -o pipefail : pipes the fail haha get it? sorry
+set -Eeuo pipefail
+trap 'echo "error on line $LINENO" >&2' ERR
 
-ENV="prod"
-
-if [ "$ENV" = "stage" ]; then
-    SUB=staging.blog
-elif [ "$ENV" = "prod" ]; then
-    SUB=blog
-else
-    echo -e "I broke focus!\n"
+if (( $# != 1 )); then
+    printf "usage: %s <stage|prod>\n" "$0" >&2
     exit 1
 fi
 
-LOCAL=$(pwd)
-REMOTE=/var/www/$SUB.adamkadda.com/html
+case "$1" in
+    stage) SUB=staging.blog ;;
+    prod) SUB=blog ;;
+    *) printf "invalid environment: %s\n" "$1" >&2; exit 1 ;;
+esac
 
-echo -e "chanting...\n"
+# check if source files exist
+shopt -s nullglob
+txt_files=(source/*.txt)
+if (( ${#txt_files[@]} == 0 )); then
+    printf "no .txt files in source\n" >&2
+    exit 1
+fi
+
+# duplicate source files for preservation
+build=$(mktemp -d)
+trap 'rm -rf "${build:-}"' EXIT # guaranteed cleanup ^^
+cp "${txt_files[@]}" "$build/"
+lua script.lua "$build"
+
+LOCAL=$(pwd)
+REMOTE="/var/www/${SUB}.adamkadda.com/html"
+
+printf "chanting...\n"
 rsync -av --delete \
     --exclude='.git' \
     --exclude='.gitignore' \
     --exclude='README.md' \
     "$LOCAL/" "$REMOTE/"
 
-echo -e "begging the spirits...\n"
+printf "begging the spirits...\n"
 sudo chown -R www-data:www-data "$REMOTE/"
 
-echo -e "gathering brain fog...\n"
+printf "gathering brain fog...\n"
 sudo find "$REMOTE" -type d -exec chmod 755 {} \;
 sudo find "$REMOTE" -type f -exec chmod 644 {} \;
 
-echo -e "befuddle!\n"
+printf "befuddle!\n"
