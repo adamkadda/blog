@@ -41,7 +41,7 @@ rsync -av --delete \
     --include='index.html' \
     --include='posts/' \
     --include='posts/***' \
-    --include='static/'
+    --include='static/' \
     --include='static/***' \
     --exclude='*' \
     "$LOCAL/" "$REMOTE"
