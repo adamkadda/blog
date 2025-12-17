@@ -68,7 +68,7 @@ end
 
 local function rowMacro(meta)
 	local tags = table.concat(meta.tags, ", ")
-	local command = ("ROW([%s], [%s], [%s], %s, %s, %s, [%s])"):format(
+	local command = ("ROW(«%s», «%s», «%s», %s, %s, %s, «%s»)"):format(
 		meta.title,
 		escape(meta.title),
 		meta.slug,

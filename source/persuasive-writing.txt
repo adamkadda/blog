@@ -7,7 +7,7 @@ date = 2025-12-12
 
 # Persuasive writing 
 
-META(2025, 12, 12, [personal, writing])
+META(2025, 11, 25, «personal, writing»)
 
 Back in elementary, I remember churning out hand-written essays every day. Our teacher would give us a prompt, and our task was to write a persuasive essay about it. Whenever I had to write something longer, I've always used this simple two step workflow:
 
@@ -35,8 +35,8 @@ As I kept reading, my feelings contorted between jealousy and confusion, but als
 As I thanked Sam and handed back his paper, I felt something stirring inside me. A visceral swirling inside my chest. Twisting, turning, and burning a little. I still can't name that feeling.
 
 DIALOGUE(
-[MESSAGE(frog, neutral, left, normal, [How dramatic.])],
-[MESSAGE(penguin, neutral, right, normal, [I think it's fine...])]
+«MESSAGE(frog, neutral, left, normal, «How dramatic.»)»,
+«MESSAGE(penguin, neutral, right, normal, «I think it's fine...»)»
 )
 
 I felt small and embarrassed. Mostly because I was *feeling* embarrassed- it's this weird feedback loop that I've gotten more familiar with now that I'm a little older. It's hard to pinpoint where this recursion started, but I think it's cause I realized I was kind of full of myself. If you can't already tell I was kind of competitive, but trust me that I didn't know that at the time.
@@ -51,9 +51,7 @@ Looking back, I really appreciate my teacher's words. He was encouraging, and re
 
 ## Effort and enjoyment
 
-I think it's important to say that I like words. Sentences even. Bad joke, sorry.
-
-What I'm trying to say is, it's a beautiful thing to arrange words in a way so that it is received hopefully in the way you intend. To me at least, it's an art form that dances between an objective and pure creative expression. It's fun. I like it.
+It's a beautiful thing to arrange words in such a way that it is received way you intend. To me at least, it's a kind of art form somewhere between an objective and pure creative expression. It's fun. I like it.
 
 Most of my English classes in elementary exercised our reading comprehension and persuasive writing skills. I think those are both very important skills. I don't have much to say about reading comprehension, so we're going to talk about (persuasive) writing. I hope you are fine with that, that's the title of this post after all.
 
@@ -76,14 +74,14 @@ When you ask someone young enough, their answers are so delightful to hear. Duri
 Sometimes, not often, I'll ask someone who isn't a child the same question. I'm being humorous, but it's an insightful question. Usually I ask someone I'm at least a little close to, and so they'll entertain my antics. But not everybody has a fun answer to that question. I remember my teachers in second grade answered "anything's fine, all I want is a house and lot". Nothing wrong with that answer, it's just a little sobering to hear as a kid.
 
 DIALOGUE(
-[MESSAGE(penguin, neutral, right, normal, [What do you want to be when you grow up?])],
-[MESSAGE(frog, neutral, left, normal, [Kind.])]
+«MESSAGE(penguin, neutral, right, normal, «What do you want to be when you grow up?»)»,
+«MESSAGE(frog, neutral, left, normal, «Kind.»)»
 )
 
-I used to strongly dislike trying my best, out of fear that it wouldn't be enough. Afraid that after trying my hardest and expending my best efforts, I would fail. It was a form of protection, self-preservation perhaps, not a good way of doing so in any case. It just didn't feel safe to risk it, because that's what it was, a risk. I would wager my time, effort and energy to accomplishing something, when I could choose to coast instead.
-
-> Time's ticking and my parents are getting older. My face is slowly wrinkling and my body puts on weight easier. Tell me Gandalf, how do we decide what to do with the time that is given to us?
+I used to strongly dislike trying my best, out of fear that it wouldn't be enough. Afraid that after trying my hardest and expending my best efforts, I would fail. It was a form of protection, self-preservation perhaps, not a good way of doing so in any case. It just didn't feel safe to risk it, because that's what it was, a risk. I would wager my time, effort and energy to accomplishing something, when I could choose to coast instead. A paralyzing mindset.
 
 So many things we could be, but think all the paths we forego by making a choice.
 
 So many things we could be, so find something fun, go at it tooth and nail, and don't let go.
+
+> Time's ticking and my parents are getting older. My face is slowly wrinkling and my body puts on weight easier. Tell me Gandalf, how do we decide what to do with the time that is given to us?
