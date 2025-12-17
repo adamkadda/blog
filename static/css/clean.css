@@ -15,6 +15,8 @@
   --color-fg: #c6c8d1;
   --color-gutter-bg: #1e2132;
   --color-gutter-fg: #444b71;
+  --color-code-bg: #13141b;
+  --color-code-fg: #b8bbc6;
 
   --color-red: #e27878;
   --color-orange: #e2a478;
@@ -237,6 +239,80 @@ blockquote {
   margin: 30px 0;
   border-left: solid 4px var(--color-grey);
   padding-left: 15px;
+  color: var(--color-grey);
+}
+
+/* =================================
+            Code Block
+================================= */
+
+code {
+  font-family: "Fragment Mono", "Courier New", Courier, monospace;
+  font-variant-ligatures: none;
+  font-size: 15px;
+  color: var(--color-code-fg);
+}
+
+div.sourceCode {
+  overflow-x: auto;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  border: solid 5px var(--color-gutter-bg);
+  border-radius: 10px;
+}
+
+pre.numberlines code {
+  counter-reset: source-line;
+}
+
+pre.numberlines code > span {
+  counter-increment: source-line;
+  position: relative;
+}
+
+pre.numberlines code > span > a:first-child::before {
+  content: counter(source-line);
+  position: absolute;
+  left: -3.5em;
+  width: 3.5em;
+  text-align: right;
+  user-select: none;
+
+  padding-right: 0.5em;
+
+  background-color: var(--color-gutter-bg);
+  color: var(--color-gutter-fg);
+}
+
+pre.numberlines {
+  padding-left: 3.5em;
+}
+
+/* keyword
+control-flow */
+.kw,
+.cf {
+  color: var(--color-blue);
+}
+
+/* string */
+.st {
+  color: var(--color-mint);
+}
+
+/* data type */
+.dt {
+  color: var(--color-blue);
+}
+
+/* other type */
+.fu,
+.ot {
+  color: var(--color-purple);
+}
+
+/* comment */
+.co {
   color: var(--color-grey);
 }
 

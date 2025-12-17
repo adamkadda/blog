@@ -80,11 +80,22 @@ local function rowMacro(meta)
 	return command
 end
 
+-- string.gsub lets you capture parts of a replacement string
+-- using %n notation.
+-- since html uses "%" characters for escaping,
+-- we have to escape them by duplicating them
+-- for example: "%" -> "%%".
+local function replace(template, pattern, repl)
+	repl = repl:gsub("%%", "%%%%")
+	return template:gsub(pattern, repl)
+end
+
 -- Keeping things simple, not that many placeholders anyways.
 local function post(template, meta, buildfile)
 	-- expand macros in buildfile -> redirect to temp.txt -> convert to html
 	local m4 = "m4 post.m4 " .. buildfile .. " > temp.txt"
-	local pandoc = "pandoc -f markdown+raw_html temp.txt -t html -o " .. buildfile
+	local pandoc = "pandoc -f markdown+raw_html+backtick_code_blocks+fenced_code_attributes temp.txt -t html -o "
+		.. buildfile
 
 	os.execute(m4)
 	os.execute(pandoc)
@@ -95,6 +106,8 @@ local function post(template, meta, buildfile)
 	file:close()
 
 	local content = template:gsub("{{%s*TITLE%s*}}", meta.title)
+
+	body = body:gsub("%%", "%%%%")
 	content = content:gsub("{{%s*BODY%s*}}", body)
 
 	local out = assert(io.open(("posts/%s.html"):format(meta.slug), "w"))
