@@ -5,7 +5,7 @@ tags = [ "personal", "writing" ]
 date = 2025-12-12
 +++
 
-# Persuasive writing 
+# Persuasive writing
 
 META(2025, 11, 25, «personal, writing»)
 
@@ -51,13 +51,13 @@ Looking back, I really appreciate my teacher's words. He was encouraging, and re
 
 ## Effort and enjoyment
 
-It's a beautiful thing to arrange words in such a way that it is received way you intend. To me at least, it's a kind of art form somewhere between an objective and pure creative expression. It's fun. I like it.
+Writing is a beautiful thing. To me, it's an art form somewhere between an objective and pure creative expression. It's fun and I like it.
 
 Most of my English classes in elementary exercised our reading comprehension and persuasive writing skills. I think those are both very important skills. I don't have much to say about reading comprehension, so we're going to talk about (persuasive) writing. I hope you are fine with that, that's the title of this post after all.
 
 In persuasive writing, your objective is to convince the reader of some idea or perspective. There's many flavors and forms this can take, but they all have the same goal of planting an idea in your head. At school, I was taught that you can appeal through logic, emotion, and credibility. There are other tools, but I'd consider them more as techniques than approaches, tactics not strategies. Of course, as little children we didn't have much credibility so we spent most of our time arguing around facts and feelings.
 
-It's a special thing to write. Your words are frozen in time, free for the reader to read as many (or as few) times as they wish. I think it's romantic. It's a form of art that wants to be understood. I enjoy it, I enjoy polishing my sentences until it sounds like me. Until it is me.
+Writing is a special thing. Your words are frozen in time, free for the reader to read as many (or as few) times as they wish. I think it's romantic. It's a form of art that wants to be understood. I enjoy it, I enjoy polishing my sentences until it sounds like me. Until it is me.
 
 Sometimes of course I prefer a more neutral writing style, nothing too recognizable. It can get boring sometimes, but I feel it's almost necessary when you're info dumping. Think reference documentation. Then again, is reference documentation supposed to be persuasive? Probably not. It's usually terse and heavy. Maybe documentation would benefit from some humor though, just my take.
 
@@ -85,3 +85,11 @@ So many things we could be, but think all the paths we forego by making a choice
 So many things we could be, so find something fun, go at it tooth and nail, and don't let go.
 
 > Time's ticking and my parents are getting older. My face is slowly wrinkling and my body puts on weight easier. Tell me Gandalf, how do we decide what to do with the time that is given to us?
+
+## Ok wrap it up
+
+At the time of writing this blog post, I'm approaching a new chapter in my life and I want to document it somehow. It's not easy to balance what I'm comfortable sharing with the world, and being honest to myself. I'm sure at least some of you understand.
+
+In any case, I'll always aim for sincerity in everything I do, my writing included.
+
+Wherever you are, take care.
